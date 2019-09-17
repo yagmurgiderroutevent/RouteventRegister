@@ -1,0 +1,11 @@
+version: '2'
+services:
+  routeventregister-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/RouteventRegister/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=RouteventRegister
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
